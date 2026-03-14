@@ -3,127 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Songa Adam is a passionate 17-year-old youth farmer from Uganda. Explore my agricultural initiatives, development projects, and portfolio.">
-    <meta name="keywords" content="Songa Adam, Farmer Uganda, Youth Farmer, Agriculture, Developer Portfolio, songaadam.github.io">
-    <meta name="author" content="Songa Adam">
-    <meta property="og:title" content="Songa Adam | Youth Farmer & Developer">
-    <meta property="og:description" content="Welcome to the portfolio of Songa Adam, a 17-year-old farmer and developer based in Uganda.">
-    <meta property="og:image" content="images/profile-preview.jpg">
+    <title>Songa Adam | Passionate Farmer & Student Portfolio</title>
+    <meta name="description" content="Official portfolio of Songa Adam, a 17-year-old passionate farmer and student from Uganda. Explore my agricultural projects and web development journey.">
+    <meta name="keywords" content="Songa Adam, Farmer Uganda, Young Farmer, Uganda Student Portfolio, Web Developer Uganda">
+    <meta property="og:title" content="Songa Adam | Farmer & Student">
+    <meta property="og:description" content="Empowering the future of agriculture and technology in Uganda.">
+    <meta property="og:image" content="me.png">
     <meta property="og:url" content="https://songaadam.github.io">
-    <title>Songa Adam | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
 </head>
-<body class="bg-green-50 text-gray-800 font-sans">
-    <nav class="bg-green-700 text-white p-4 shadow-md sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center">
-            <a href="#" class="text-2xl font-bold tracking-wider nav-link" data-target="home">Songa Adam</a>
-            <div class="flex gap-4 flex-wrap mt-2 sm:mt-0">
-                <button class="nav-link hover:text-green-300 transition" data-target="home">Home</button>
-                <button class="nav-link hover:text-green-300 transition" data-target="about">About</button>
-                <button class="nav-link hover:text-green-300 transition" data-target="projects">Projects</button>
-                <button class="nav-link hover:text-green-300 transition" data-target="developer">Developer</button>
-                <button class="nav-link hover:text-green-300 transition" data-target="contact">Contact</button>
-                <button class="nav-link bg-yellow-500 text-yellow-900 px-3 py-1 rounded-md font-bold hover:bg-yellow-400 transition" data-target="coffee">Buy me a Coffee</button>
+<body class="bg-gray-50 text-gray-900">
+
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-2xl font-bold text-green-600">SONGA.A</div>
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="index.html" class="text-green-600">Home</a>
+                    <a href="about.html" class="hover:text-green-600 transition">About</a>
+                    <a href="projects.html" class="hover:text-green-600 transition">Projects</a>
+                    <a href="developer.html" class="hover:text-green-600 transition">Developer</a>
+                    <a href="comments.html" class="hover:text-green-600 transition">Guestbook</a>
+                    <a href="contact.html" class="hover:text-green-600 transition">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-600 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
 
-    <main class="max-w-6xl mx-auto p-6 min-h-screen">
-        <section id="home" class="page-section flex flex-col items-center text-center py-20">
-            <img src="images/songa-hero.jpg" alt="Songa Adam" class="w-48 h-48 rounded-full object-cover border-4 border-green-600 mb-6 shadow-lg">
-            <h1 class="text-5xl font-extrabold text-green-800 mb-4">Hi, I'm Songa Adam</h1>
-            <p class="text-xl text-gray-700 max-w-2xl">A passionate 17-year-old youth farmer based in Uganda, cultivating a better future through agriculture and technology.</p>
-        </section>
+    <header class="relative bg-green-900 h-[80vh] flex items-center justify-center text-center text-white overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=80" alt="Lush Ugandan Farm" class="absolute inset-0 w-full h-full object-cover opacity-40">
+        <div class="relative z-10 px-4">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4">Songa Adam</h1>
+            <p class="text-xl md:text-2xl mb-8 font-light tracking-wide">Cultivating the Land & Coding the Future</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="projects.html" class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-semibold transition shadow-lg">View My Projects</a>
+                <a href="contact.html" class="bg-white hover:bg-gray-100 text-green-900 px-8 py-3 rounded-full font-semibold transition shadow-lg">Get In Touch</a>
+            </div>
+        </div>
+    </header>
 
-        <section id="about" class="page-section hidden py-12">
-            <h2 class="text-4xl font-bold text-green-700 mb-6">About Me</h2>
-            <div class="flex flex-col md:flex-row gap-8 items-center">
-                <img src="images/songa-farming.jpg" alt="Songa farming in Uganda" class="w-full md:w-1/2 rounded-lg shadow-md">
-                <div class="text-lg text-gray-700 leading-relaxed md:w-1/2">
-                    <p class="mb-4">I am a 17-year-old dedicated to bridging the gap between traditional farming and modern solutions in Uganda.</p>
-                    <p>My journey started with a simple love for the land, and it has grown into a mission to build sustainable agricultural practices while learning and applying web development skills to share my story with the world.</p>
+    <section class="py-20 max-w-6xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <img src="me.png" alt="Songa Adam" class="rounded-2xl shadow-2xl w-full max-w-md mx-auto">
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold mb-6 text-green-800 border-l-4 border-green-600 pl-4">Who is Songa Adam?</h2>
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                    At 17 years old, I am bridging the gap between traditional agriculture and modern technology in Uganda. As a student and a passionate youth farmer, I believe in sustainable growth and digital innovation.
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-4 bg-white rounded-xl shadow-sm border border-gray-100">
+                        <h3 class="font-bold text-green-600 text-xl">17</h3>
+                        <p class="text-sm text-gray-500 uppercase tracking-tighter">Years Old</p>
+                    </div>
+                    <div class="p-4 bg-white rounded-xl shadow-sm border border-gray-100">
+                        <h3 class="font-bold text-green-600 text-xl">Uganda</h3>
+                        <p class="text-sm text-gray-500 uppercase tracking-tighter">Location</p>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="projects" class="page-section hidden py-12">
-            <h2 class="text-4xl font-bold text-green-700 mb-6">My Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow border-t-4 border-green-600">
-                    <img src="images/project-agriculture.jpg" alt="Agriculture Project" class="w-full h-40 object-cover rounded mb-4">
-                    <h3 class="text-2xl font-bold mb-2">Sustainable Farming Initiative</h3>
-                    <p class="text-gray-600">Implementing modern irrigation and crop rotation techniques in local Ugandan communities to maximize yield.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow border-t-4 border-green-600">
-                    <img src="images/project-tech.jpg" alt="Tech Project" class="w-full h-40 object-cover rounded mb-4">
-                    <h3 class="text-2xl font-bold mb-2">Agri-Tech Solutions</h3>
-                    <p class="text-gray-600">Building web-based platforms to track crop growth and farming patterns using modern web technologies.</p>
-                </div>
+    <footer class="bg-gray-900 text-gray-400 py-12 text-center">
+        <div class="max-w-6xl mx-auto px-4">
+            <p class="mb-4 text-white font-bold">Songa Adam &copy; 2026</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="hover:text-green-500">Facebook</a>
+                <a href="#" class="hover:text-green-500">Twitter</a>
+                <a href="#" class="hover:text-green-500">Instagram</a>
             </div>
-        </section>
-
-        <section id="developer" class="page-section hidden py-12">
-            <h2 class="text-4xl font-bold text-green-700 mb-6">Developer Profile</h2>
-            <div class="bg-white p-8 rounded-lg shadow-md">
-                <h3 class="text-2xl font-bold mb-4">Skills & Technologies</h3>
-                <div class="flex flex-wrap gap-3 mb-6">
-                    <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full font-semibold">HTML5</span>
-                    <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full font-semibold">Tailwind CSS</span>
-                    <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full font-semibold">JavaScript</span>
-                    <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full font-semibold">SEO Optimization</span>
-                    <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full font-semibold">Single Page Applications</span>
-                </div>
-                <p class="text-gray-700 text-lg">I build fast, responsive, and SEO-friendly single-page applications. My focus is on clean architecture and seamless user experiences.</p>
-            </div>
-        </section>
-
-        <section id="contact" class="page-section hidden py-12">
-            <h2 class="text-4xl font-bold text-green-700 mb-6">Get In Touch</h2>
-            <form class="max-w-lg bg-white p-8 rounded-lg shadow-md">
-                <div class="mb-4">
-                    <label class="block text-gray-700 font-bold mb-2" for="name">Name</label>
-                    <input class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" type="text" id="name" required>
-                </div>
-                <div class="mb-4">
-                    <label class="block text-gray-700 font-bold mb-2" for="email">Email</label>
-                    <input class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" type="email" id="email" required>
-                </div>
-                <div class="mb-6">
-                    <label class="block text-gray-700 font-bold mb-2" for="message">Message</label>
-                    <textarea class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 h-32" id="message" required></textarea>
-                </div>
-                <button class="bg-green-700 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-800 transition w-full" type="submit">Send Message</button>
-            </form>
-        </section>
-
-        <section id="coffee" class="page-section hidden py-20 text-center">
-            <h2 class="text-4xl font-bold text-green-700 mb-6">Support My Work</h2>
-            <p class="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">If you appreciate my agricultural initiatives or my web development journey, consider supporting me by buying me a cup of coffee!</p>
-            <a href="https://www.buymeacoffee.com/yourlinkhere" target="_blank" class="inline-block bg-yellow-500 text-yellow-900 text-2xl font-bold py-4 px-8 rounded-full shadow-lg hover:bg-yellow-400 transition transform hover:-translate-y-1">Buy Me a Coffee</a>
-        </section>
-    </main>
-
-    <footer class="bg-gray-800 text-white text-center p-6 mt-auto">
-        <p>&copy; 2026 Songa Adam. All rights reserved.</p>
+        </div>
     </footer>
 
-    <script>
-        const links = document.querySelectorAll('.nav-link');
-        const sections = document.querySelectorAll('.page-section');
-
-        links.forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const targetId = link.getAttribute('data-target');
-
-                sections.forEach(section => {
-                    section.classList.add('hidden');
-                });
-
-                document.getElementById(targetId).classList.remove('hidden');
-                window.scrollTo(0, 0);
-            });
-        });
-    </script>
 </body>
 </html>
