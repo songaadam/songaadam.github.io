@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Songa Adam</title>
+    <meta name="description" content="Learn more about Songa Adam, a 17-year-old Ugandan student balancing academics and a passion for agriculture.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Inter', sans-serif; } #mobile-menu { transition: all 0.3s ease-in-out; }</style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-2xl font-bold text-green-600">SONGA.A</div>
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="index.html" class="hover:text-green-600 transition">Home</a>
+                    <a href="about.html" class="text-green-600">About</a>
+                    <a href="projects.html" class="hover:text-green-600 transition">Projects</a>
+                    <a href="developer.html" class="hover:text-green-600 transition">Developer</a>
+                    <a href="comments.html" class="hover:text-green-600 transition">Guestbook</a>
+                    <a href="contact.html" class="hover:text-green-600 transition">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-toggle" class="text-gray-600 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 py-4 space-y-4 shadow-lg">
+            <a href="index.html" class="block text-gray-600">Home</a>
+            <a href="about.html" class="block text-green-600 font-medium">About</a>
+            <a href="projects.html" class="block text-gray-600">Projects</a>
+            <a href="developer.html" class="block text-gray-600">Developer</a>
+            <a href="comments.html" class="block text-gray-600">Guestbook</a>
+            <a href="contact.html" class="block text-gray-600">Contact</a>
+        </div>
+    </nav>
+
+    <main class="py-16 max-w-4xl mx-auto px-4">
+        <h1 class="text-4xl font-bold text-green-800 mb-8 border-b-4 border-green-600 inline-block pb-2">My Journey</h1>
+        <div class="space-y-6 text-lg leading-relaxed text-gray-700">
+            <p>I am Songa Adam, a 17-year-old student living in Uganda. My life is a blend of two worlds: the fertile soil of our land and the limitless potential of digital technology.</p>
+            <p>From a young age, I found peace and purpose in farming. Seeing a seed grow into a harvest taught me patience, hard work, and the importance of sustainability. As a "passionate farmer youth," my goal is to modernize how we look at agriculture in our community.</p>
+            <p>Alongside my agricultural roots, I am a dedicated student. I am building this digital home to share my progress, connect with like-minded individuals, and showcase that the youth of Uganda are ready to lead in both fields and files.</p>
+        </div>
+        
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <img src="farm_work.png" alt="Working on the farm" class="rounded-xl shadow-lg w-full h-64 object-cover">
+            <img src="studying.png" alt="Songa Adam Studying" class="rounded-xl shadow-lg w-full h-64 object-cover">
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 text-center mt-auto">
+        <p class="mb-4 text-white font-bold">Songa Adam &copy; 2026</p>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-toggle');
+        const menu = document.getElementById('mobile-menu');
+        const icon = document.getElementById('menu-icon');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            if (menu.classList.contains('hidden')) { icon.setAttribute('d', 'M4 6h16M4 12h16m-7 6h7'); } 
+            else { icon.setAttribute('d', 'M6 18L18 6M6 6l12 12'); }
+        });
+    </script>
+</body>
+</html>
